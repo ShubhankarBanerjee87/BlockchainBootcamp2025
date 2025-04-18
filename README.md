@@ -1,8 +1,8 @@
-# 🚀 NFT Minter Bootcamp Template
+# 🚀 NFT Minter Bootcamp
 
 Welcome to the **Blockchain & Web3 Bootcamp NFT Project**!
 
-This repo contains the **starter template** for the *NFT Attendance Proof Minter dApp* that you'll build during the 2-day BootCamp. You'll write smart contracts, integrate frontend, and finally mint your own NFT on the **Polygon Amoy Testnet**.
+This repo contains the **starter template** for the *NFT Attendance Proof Minter dApp* that you'll build during the 2-day BootCamp. You'll write smart contracts, integrate frontend, and finally mint your own NFT on the **Polygon**.
 
 ---
 
@@ -11,14 +11,14 @@ This repo contains the **starter template** for the *NFT Attendance Proof Minter
 **🗓️ Day 1 – Blockchain & Smart Contracts (Rohit Gupta)**
 - What is Blockchain & Web3
 - Smart Contracts in Solidity
-- Deploy your NFT contract to Polygon Mumbai
-- Tools: MetaMask, Remix, PolygonScan, OpenSea Testnet
+- Deploy your NFT contract to Polygon 
+- Tools: MetaMask, Remix, PolygonScan, OpenSea 
 
 **🗓️ Day 2 – Frontend + Integration (Shubhankar Banerjee)**
 - HTML, CSS, JS refresher
 - Interacting with blockchain via frontend
 - Build & run NFT minter dApp
-- Host with Node.js + Express
+- Host with Node.js + Express.js
 
 ---
 
@@ -35,7 +35,7 @@ This repo contains the **starter template** for the *NFT Attendance Proof Minter
 - HTML, CSS, JavaScript
 - Ethers.js
 - IPFS (via Pinata or NFT.Storage)
-- Polygon Amoy Testnet
+- Polygon 
 
 ---
 
@@ -58,7 +58,7 @@ npm install
 
 ```bash
 PRIVATE_KEY=your_wallet_private_key
-RPC_URL=https://polygon-mumbai.infura.io/v3/your_project_id
+RPC_URL=https://polygon-mainnet.g.alchemy.com/v2/API-KEY
 ```
 
 🔐 Important: Do not share your .env file publicly or commit it to version control.
@@ -72,7 +72,7 @@ npx hardhat compile
 ### 5. Deploy
 
 ```bash
-npx hardhat run scripts/deploy.js --network amoy
+npx hardhat run scripts/deploy.js --network [network-name]
 ```
 
 ---
@@ -82,7 +82,7 @@ npx hardhat run scripts/deploy.js --network amoy
 ### 📄 Smart Contract (Solidity)
 
 - [ ] Complete the `mintNFT()` function in `contracts/NFTAttendance.sol`
-- [ ] Deploy the contract to **Polygon Mumbai Testnet**
+- [ ] Deploy the contract to **Polygon**
 
 ### 🌐 Frontend (HTML/JS)
 
@@ -97,8 +97,8 @@ npx hardhat run scripts/deploy.js --network amoy
 
 - 🔧 [Remix IDE](https://remix.ethereum.org/)
 - 🦊 [MetaMask](https://metamask.io/)
-- 🔎 [PolygonScan (Mumbai)](https://mumbai.polygonscan.com/)
-- 🖼️ [OpenSea Testnet](https://testnets.opensea.io/)
+- 🔎 [PolygonScan](https://polygonscan.com/)
+- 🖼️ [OpenSea ](https://opensea.io/)
 - 📤 [Pinata](https://www.pinata.cloud/)
 - 📦 [NFT.Storage](https://nft.storage/)
 
@@ -106,8 +106,8 @@ npx hardhat run scripts/deploy.js --network amoy
 
 ## 📸 Sample Output
 
-> Once minted successfully, your NFT will appear on OpenSea Testnet like this:
-> `https://testnets.opensea.io/assets/amoy/<your_contract_address>/<token_id>`
+> Once minted successfully, your NFT will appear on OpenSea  like this:
+> `https://opensea.io/assets//<your_contract_address>/<token_id>`
 
 ---
 
