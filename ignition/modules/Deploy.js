@@ -3,7 +3,7 @@
 
 const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
 
-const INITIAL_OWNER = "{public-address}";
+const INITIAL_OWNER = process.env.PUBLIC_OWNER; // safer
 
 module.exports = buildModule("NFTMinterModule", (m) => {
   const initialOwner = m.getParameter("initialOwner", INITIAL_OWNER);

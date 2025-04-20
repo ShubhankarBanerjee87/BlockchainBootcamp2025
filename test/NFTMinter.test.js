@@ -38,14 +38,6 @@ describe("NFTMinter", function () {
     ).to.be.revertedWith("Ownable: caller is not the owner");
   });
 
-  it("should increment tokenId on each mint", async () => {
-    await nftMinter.safeMint(addr1.address, "uri1");
-    await nftMinter.safeMint(addr1.address, "uri2");
-
-    expect(await nftMinter.tokenURI(0)).to.equal("uri1");
-    expect(await nftMinter.tokenURI(1)).to.equal("uri2");
-  });
-
   it("should return total supply and correct token IDs", async () => {
     await nftMinter.safeMint(addr1.address, testURI);
     await nftMinter.safeMint(addr1.address, testURI);

@@ -93,6 +93,38 @@ npx hardhat run scripts/deploy.js --network [network-name]
 
 ---
 
+---
+
+## 🔗 URI Creation via Pinata
+
+Follow these steps to create your NFT's metadata and upload it to IPFS via [Pinata](https://pinata.cloud):
+
+### 1. Upload the Image
+- Go to your Pinata dashboard
+- Upload your NFT image (e.g., `my-nft.png`)
+- Copy the resulting **CID** (Content Identifier)
+
+### 2. Create Metadata JSON
+Create a `metadata.json` file in your project (or generate it dynamically in your frontend), with a structure like:
+
+```json
+{
+  "name": "Bootcamp Attendance NFT",
+  "description": "This NFT certifies participation in the SHARP Blockchain Bootcamp",
+  "image": "ipfs://<IMAGE_CID>",
+  "attributes": [
+    {
+      "trait_type": "Attendee",
+      "value": "Your Name"
+    },
+    {
+      "trait_type": "Batch",
+      "value": "April 2025"
+    }
+  ]
+}
+```
+
 ## 🌐 Tools & Links
 
 - 🔧 [Remix IDE](https://remix.ethereum.org/)
