@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  body {
+    background-color: #1a1a24;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .responsive-logo {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #csharpCornerLogo {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .logo {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 5px;
+  }
+
+  .connect-wallet-btn {
+    background-color: #4b4acf;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .connect-wallet-btn:hover {
+    background-color: #3f3eb3;
+  }
+
+  .metamask-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+
+  .minter-form {
+    background-color: #21212e;
+    border-radius: 12px;
+    padding: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  label {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    background-color: #1a1a24;
+    border: 1px solid #333340;
+    border-radius: 6px;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+  }
+
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  .image-upload-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .image-preview {
+    width: 300px;
+    height: 200px;
+    background-color: #1a1a24;
+    border: 1px solid #333340;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+
+  .file-upload {
+    flex: 1;
+    border: 2px dashed #444450;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 200px;
+  }
+
+  .file-upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #888;
+  }
+
+  .plus-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .file-upload input {
+    display: none;
+  }
+
+  .mint-btn {
+    width: 100%;
+    background-color: #4b4acf;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .mint-btn:hover {
+    background-color: #3f3eb3;
+  }
+
+  .footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #888;
+  }
+
+  .footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .footer-logo {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 8px;
+  }
+
+  .attribution {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
